@@ -1,28 +1,23 @@
-# Split Object
+# challenge name: strategy name
 
-Split an object into an array of objects. Each entry in the array will be one key/value pair from the object.
+<!-- BEGIN DOCS -->
+
+<!-- END DOCS -->
 
 ---
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that helps you understand:
+## Strategy
 
-```js
-/**
- * Splits an object into multiple objects with one key/value pair each.
- * The new objects are returned in an array.
- *
- * This function has no side-effects, the argument object is not modified
- *
- * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
- * @returns {Array} Returns a new array with one entry for each key/value pair.
- * @example
- *
- * splitObject({ a: 1, b: 2, c: 3 });
- * // -> [{ a: 1 }, { b: 2 }, { c: 3 }]
- *
- * @example
- *
- * splitObject({});
- * // -> []
- */
-```
+---
+
+## Implementation
+
+---
+
+## Use Cases
+
+---
+
+## Inspiration
+I had no ideas how to solve this one by myself.
+So I will adapt the code by [AmitDiwan](https://www.tutorialspoint.com/splitting-an-object-into-an-array-of-objects-in-javascript)
