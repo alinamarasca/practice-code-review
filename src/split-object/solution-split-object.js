@@ -1,4 +1,4 @@
 /**
  *
  */
-export const splitObjects = () => {};
+export const splitObject = () => {};
