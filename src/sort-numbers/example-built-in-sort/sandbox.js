@@ -9,6 +9,7 @@ import { sortNumbers } from './sort-numbers.js';
     the .spec.js file is for tests and final validation only, not experiments
     the main file should include only the exported function and jsdoc string
 */
+var ggg = 13;
 
 console.log(sortNumbers([1, 2, 3])); // [1,2,3]
 
