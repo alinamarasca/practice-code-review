@@ -7,9 +7,11 @@
 ---
 
 ## Strategy
+
  * Splits an object into multiple objects with one key/value pair each.
  * The new objects are returned in an array.
-(how to say that not using it terms?)
+(how to say that not using IT terms?)
+
 ## Implementation
 
 ---
@@ -28,5 +30,4 @@ I had no ideas how to solve this one by myself, so I searched for possible solut
 2. [Konhar Coding](https://www.youtube.com/watch?v=Rvfl7nKNcMU)
 
 **Explanations**
-* [Steve Griffith - Object keys, values, and entries methods
-](https://www.youtube.com/watch?v=VmicKaGcs5g)
+* [Steve Griffith - Object keys, values, and entries methods](https://www.youtube.com/watch?v=VmicKaGcs5g)
