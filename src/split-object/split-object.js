@@ -11,8 +11,8 @@
 
 export const splitObject = (obj) => {
   let arrayOfObjects = [];
-  const arr = Object.keys(obj);
-  arrayOfObjects = arr.map((key) => {
+  const allKeys = Object.keys(obj);
+  arrayOfObjects = allKeys.map((key) => {
     return { [key]: obj[key] };
   });
   return arrayOfObjects;
