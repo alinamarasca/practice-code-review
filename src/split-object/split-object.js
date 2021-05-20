@@ -8,7 +8,7 @@
  * @example
  * splitObject({a: 'b', c: 'd', e: 'f' }
  * {a: 'b', c: 'd', e: 'f' } -> [{a:'b;}, {c:'d'}, {e:'f'}];
- *  */
+ */
 
 export const splitObject = (obj) => {
   let arrayOfObjects = []; // create final array
