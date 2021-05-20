@@ -53,11 +53,11 @@ I had to figure it out certain things:
 
 It could be used to compare items in a online shopping.
 
-shopping card
+----> compare items inside of shopping card and final step of purchase.
 
-addToShoppingCard["jeans, 40£", "scarf, 15£" "skirt, 20£"] toBuyFinal["jeans, 35£", "jeans, 40£"]
+addToShoppingCard["jeans, 40£", "scarf, 15£" "skirt, 20£"] finalStep["jeans, 35£", "jeans, 40£"]
 
-You already have it in your shopping card, or even after.
+You already have it in your shopping card, are you sure you want to buy it?
 
 ## Inspired by
 
