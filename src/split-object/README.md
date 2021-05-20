@@ -8,12 +8,10 @@
 
 ## Strategy
 
-* Splits an object into multiple objects with one key/value pair each.
-* The new objects are returned in an array.
+To create an array filled with one key-value pair objects I need to take key and value from given object and rewrite them into new object. That needs to be done for each key/value pair of given object.
+Every new object is added to final array.
 
 ## Implementation
-
-After checking out possible solutions, I've tried to make my own using JS methods to get all values and keys, than iterate through them with the help of a loop. That was a big fail because I can't iterate simultaneously through one object and write key/value pairs(there was some smart terminology for that) in another object. My attempts helped me to understand better Konhar's solution - he creates array with keys to be able to iterate through them easily and uses `map()`  to make solutions shorter.
 
 * get an object to work with
 * create empty final array
@@ -39,7 +37,12 @@ I had no ideas how to solve this one by myself, so I searched for possible solut
 1. [AmitDiwan](https://www.tutorialspoint.com/splitting-an-object-into-an-array-of-objects-in-javascript)
 2. [Konhar Coding](https://www.youtube.com/watch?v=Rvfl7nKNcMU)
 
-I chose solution by Konhar because I want to get more familiar with JS methods, especially with `map()`. I also just liked his approach.
+I chose solution by Konhar because:
+
+* I want to get more familiar with JS methods, especially with `map()`
+* this solution is also an example of easier iteration through array instead of object
+* I also just liked his approach it is simple and short
+  
 But I had to turn his solution into a function.
 
 **Extra explanations**
