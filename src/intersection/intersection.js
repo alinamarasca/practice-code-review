@@ -1,12 +1,22 @@
 /**
  * Creates an array of values that are in both the first and the second arrays.
+ *
  * Repeated values are not duplicated in the return value, and the order of result
-values are determined by the first array.
+ * values are determined by the first array.
+ *
  * Note: This function returns a new array, and has no side-effects.
-*
+ *
  * @param {Array} [arr1=[]] - First array to inspect.
  * @param {Array} [arr2=[]] - Second array to inspect.
  * @returns {Array} Returns the new array of filtered values.
+ * @example
+ *
+ * difference([2, 1], [2, 3]); call function
+ * // -> [2] expected
+ *
+ * @example
+ * difference([2, 1, 2], [2, 3]);
+ * // -> [2]
  */
 
 export const intersection = (arr1 = [], arr2 = []) => {
@@ -18,7 +28,7 @@ export const intersection = (arr1 = [], arr2 = []) => {
 
   // if they don't have any in common
   if (arr1.length === 0 || arr2.length === 0) {
-    return "at least one array is empty";
+    return 'at least one array is empty';
   }
   // add a value to compare in next step
   arr2.forEach((i) => {

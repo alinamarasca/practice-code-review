@@ -4,34 +4,43 @@ Write a function that finds all the values shared between two arrays.
 
 ---
 
-## Docstring
+<!-- BEGIN DOCS -->
+
+<a name="intersection"></a>
+
+## intersection ⇒ <code>Array</code>
+
+Creates an array of values that are in both the first and the second arrays.
+
+Repeated values are not duplicated in the return value, and the order of result
+values are determined by the first array.
+
+Note: This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param  | Type               | Default         | Description              |
+| ------ | ------------------ | --------------- | ------------------------ |
+| [arr1] | <code>Array</code> | <code>[]</code> | First array to inspect.  |
+| [arr2] | <code>Array</code> | <code>[]</code> | Second array to inspect. |
+
+**Example**
 
 ```js
-/**
- *
- * Creates an array of values that are in both the first and the second arrays.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [arr1=[]] - First array to inspect.
- * @param {Array} [arr2=[]] - Second array to inspect.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * difference([2, 1], [2, 3]); call function
- * // -> [2]   expected
- *
- * @example
- *
- * difference([2, 1, 2], [2, 3]);
- * // -> [2]
- * function expect which values are in common
- */
+difference([2, 1], [2, 3]); call function
+// -> [2] expected
 ```
 
-> Docstring is adapted from [lodash's intersection](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7498)
+**Example**
+
+```js
+difference([2, 1, 2], [2, 3]);
+// -> [2]
+```
+
+> Docs generated: Fri May 21 2021, 11:28:43 AM
+
+<!-- END DOCS -->
 
 ## Strategy
 
@@ -39,7 +48,7 @@ Write a function that finds all the values shared between two arrays.
 
 ## Implementation
 
-I had to figure it out certain things:
+I had to figure out certain things:
 
 - the forEach method calls a function once for each element. To compare each element of array I had to used this method because it allowed me to add a value to be passed and compared in a specific condition.And it was in order so I could check better.
 
@@ -63,4 +72,3 @@ You already have it in your shopping card, are you sure you want to buy it?
 
 - forEach [w3school](https://www.w3schools.com/jsref/jsref_foreach.asp) and [freeCodeCamp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/)
 - Set [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
--
