@@ -4,31 +4,71 @@ Write a function that finds all the values shared between two arrays.
 
 ---
 
-## Docstring
+<!-- BEGIN DOCS -->
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that helps you understand:
+<a name="intersection"></a>
+
+## intersection ⇒ <code>Array</code>
+
+Creates an array of values that are in both the first and the second arrays.
+
+Repeated values are not duplicated in the return value, and the order of result
+values are determined by the first array.
+
+Note: This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param  | Type               | Default         | Description              |
+| ------ | ------------------ | --------------- | ------------------------ |
+| [arr1] | <code>Array</code> | <code>[]</code> | First array to inspect.  |
+| [arr2] | <code>Array</code> | <code>[]</code> | Second array to inspect. |
+
+**Example**
 
 ```js
-/**
- * Creates an array of values that are in both the first and the second arrays.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to exclude.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * difference([2, 1], [2, 3]);
- * // -> [2]
- *
- * @example
- *
- * difference([2, 1, 2], [2, 3]);
- * // -> [2]
- */
+difference([2, 1], [2, 3]); call function
+// -> [2] expected
 ```
 
-> Docstring is adapted from [lodash's intersection](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7498)
+**Example**
+
+```js
+difference([2, 1, 2], [2, 3]);
+// -> [2]
+```
+
+> Docs generated: Fri May 21 2021, 11:28:43 AM
+
+<!-- END DOCS -->
+
+## Strategy
+
+- In order to compare two arrays and find the shared elements, I chose to check each element of array and assign a new value to compare them after. These compared elements will go to an empty box which is going to filter duplicates.
+
+## Implementation
+
+I had to figure out certain things:
+
+- the forEach method calls a function once for each element. To compare each element of array I had to used this method because it allowed me to add a value to be passed and compared in a specific condition.And it was in order so I could check better.
+
+  Inspired by 'Code with tkssharma' [channel on youTube](https://www.youtube.com/watch?v=em4zXfZsfds)
+
+- the set object let me to store unique values of any type. In order to have a result without duplicates I had to store the elements in a set to filter and make them unique.
+
+- Array.from. Converted to array again.
+
+## Use cases
+
+It could be used to compare items in a online shopping.
+
+----> compare items inside of shopping card and final step of purchase.
+
+addToShoppingCard["jeans, 40£", "scarf, 15£" "skirt, 20£"] finalStep["jeans, 35£", "jeans, 40£"]
+
+You already have it in your shopping card, are you sure you want to buy it?
+
+## Inspired by
+
+- forEach [w3school](https://www.w3schools.com/jsref/jsref_foreach.asp) and [freeCodeCamp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/)
+- Set [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)

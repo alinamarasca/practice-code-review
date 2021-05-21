@@ -1,0 +1,19 @@
+Fri May 21 2021, 10:08:16 AM
+
+intersection shared elements
+  intersection returns shared elements
+    √ PASS: all numbers
+    √ PASS: all words and numbers
+    √ PASS: all words 
+    √ PASS: all booleans 
+  intersection returns shared elements without duplicates
+    √ PASS: both arrays have duplicated element
+    √ PASS: first array has duplicated element
+    √ PASS: second array has duplicated element
+
+intersection without shared elements
+  intersection returns empty
+    √ PASS: both arrays are empty
+    √ PASS: at least one array is empty
+    √ PASS: no common elements
+
