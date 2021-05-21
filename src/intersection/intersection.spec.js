@@ -1,6 +1,6 @@
 import { intersection } from "./intersection.js";
 
-describe("intersection shared elements", () => {
+describe("intersection returns shared elements", () => {
   describe("intersection returns shared elements", () => {
     it("all numbers", () => {
       const expected = [2];
@@ -8,13 +8,13 @@ describe("intersection shared elements", () => {
       expect(received).toEqual(expected);
     });
 
-    it("all words and numbers", () => {
+    it("all strings and numbers", () => {
       const expected = [2, 1, 3];
       const received = intersection([2, 1, "sky", 3], [2, 3, "cookies", 8, 1]);
       expect(received).toEqual(expected);
     });
 
-    it("all words ", () => {
+    it("all strings ", () => {
       const expected = ["", "cookies"];
       const received = intersection(
         ["", "sky", "cookies"],
