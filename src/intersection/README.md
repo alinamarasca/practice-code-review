@@ -54,8 +54,8 @@ I had to figure out certain things:
 
   Inspired by 'Code with tkssharma' [channel on youTube](https://www.youtube.com/watch?v=em4zXfZsfds)
 
-- the set object let me to store unique values of any type. In order to have a result without duplicates I had to store the elements in a set to filter and make them unique.
-
+- the set object let me to store unique values of any type. In order to have a result without duplicates I had to add the elements in a set. `Set()` doesn't allow duplicates to be pushed into the object.
+- 
 - Array.from. Converted to array again.
 
 ## Use cases
