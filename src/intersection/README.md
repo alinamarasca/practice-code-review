@@ -21,12 +21,12 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
  * @returns {Array} Returns the new array of filtered values.
  * @example
  *
- * difference([2, 1], [2, 3]);
+ * intersection([2, 1], [2, 3]);
  * // -> [2]
  *
  * @example
  *
- * difference([2, 1, 2], [2, 3]);
+ * intersection([2, 1, 2], [2, 3]);
  * // -> [2]
  */
 ```
