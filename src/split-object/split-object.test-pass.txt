@@ -1,0 +1,17 @@
+Thu May 20 2021, 10:06:59 AM
+
+splitObject splits an object into one key/value pair objects, returns and array with these objects
+  strings and numbers
+    √ PASS: keys, values - numbers
+    √ PASS: keys, values - strings
+    √ PASS: keys, values - numbers/strings
+    √ PASS: empty string values
+  tricky values
+    √ PASS: value - boolean
+    √ PASS: value - NaN, Infinity, null
+    √ PASS: value - undefined
+  empty array
+    √ PASS: empty array
+  has no side effects
+    √ PASS: empty array
+
