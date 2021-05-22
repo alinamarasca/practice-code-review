@@ -22,4 +22,3 @@ export const filterItems = (array = [], values = []) => {
   newArray = array.filter((el) => !values.includes(el));
   return newArray;
 };
-
