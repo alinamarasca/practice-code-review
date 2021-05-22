@@ -1,0 +1,20 @@
+Sat May 22 2021, 12:41:23 PM
+
+
+
+removes the difference items for two arrays
+  difference positive numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  difference negative numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  difference mixed positive and negative numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  difference two string array
+    √ PASS: 
+
