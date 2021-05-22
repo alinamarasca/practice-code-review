@@ -11,10 +11,10 @@
  * @returns {Array} Returns the new array of filtered values.
  * @example
  *
- * difference([2, 1], [2, 3]); //  [1]
+ * filterItems([2, 1], [2, 3]); //  [1]
  * @example
  *
- * difference([1, 2, 1], [2, 3]); //  [1]
+ * filterItems([1, 2, 1], [2, 3]); //  [1]
  */
 
 export const filterItems = (array = [], values = []) => {
@@ -22,3 +22,4 @@ export const filterItems = (array = [], values = []) => {
   newArray = array.filter((el) => !values.includes(el));
   return newArray;
 };
+
